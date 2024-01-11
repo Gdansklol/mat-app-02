@@ -1,0 +1,23 @@
+:root {
+    --background-color: #fff;
+    --backgound-light: ##fff;
+    --shadow-color: rgba(0,0,0,0.2); /* The color of the shadow with 20% opacity */
+    --primary-color:rgb(225,0,86); /* Primary color is used for emphasis, here in the form of an RGB color code */
+    --text-color: #0A0A0A;
+    --text-light: #575757; /* A lighter color for text, can be used to create contrasts in the design */
+    --font-size: 16px;
+    --animation-speed: 1; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 3.4375rem; /* 55px / 16px = 3.4375rem */
+    box-shadow: 0 3px 6px var(--shadow-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
