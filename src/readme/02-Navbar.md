@@ -22,6 +22,30 @@ tutorial link: (https://www.youtube.com/watch?v=VA4Nlh-zkTg&list=PLBh9z20x5LUqfm
 
  ```
 
+### code block exemple
+
+```js
+function App() {
+  return (
+    <div className="App">
+      Foodi Cruella 
+    </div>
+  );
+}
+
+export default App;
+
+```
+```scss
+index.scss
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
  - använda dessa variabler för att sätta färger, skuggor, eller andra egenskaper i ditt dokument. Till exempel:
 
  ```css
