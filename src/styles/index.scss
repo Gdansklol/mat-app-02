@@ -1,6 +1,6 @@
 :root {
     --background-color: #fff;
-    --backgound-light: ##fff;
+    --backgound-light: #fff;
     --shadow-color: rgba(0,0,0,0.2); /* The color of the shadow with 20% opacity */
     --primary-color:rgb(225,0,86); /* Primary color is used for emphasis, here in the form of an RGB color code */
     --text-color: #0A0A0A;
@@ -15,9 +15,60 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: var(--font-size);
+    font-family: 'Roboto', sans-serif;
+}
+ a{
+    text-decoration: none;
+ }
 .navbar {
-    height: 3.4375rem; /* 55px / 16px = 3.4375rem */
+    height: 55px ; /* 55px / 16px = 3.4375rem */
     box-shadow: 0 3px 6px var(--shadow-color);
     background-color: var(--background-color);
     color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+       font-size: 1.5em;
+       font-weight: bold;
+       color: var(--primary-color);
+       text-shadow: 0 1px 3px var(--shadow-color);
+       span{
+        color: var(--text-color);
+       }
+    }
+    
+}
+.nav-links{
+    a{
+        margin-left: 1em;
+        color:var(--text-light);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::before{
+            content: '';
+            display:inline-block;
+            height: 3px;
+            width: 100%;
+            background-color: var(--primary-color);
+            bottom: -5px;
+            position: absolute;
+            left: 0; 
+            transform: scaleX(0);
+            transition:transform calc(var(--animation-speed) * 0.2s) ease-in-out;
+        }
+        &:hover{
+            &::before{
+                transform: scaleX(1);
+            }
+        }
+    }
+}
+
+.container {
+    padding-inline: 15vw;
 }
