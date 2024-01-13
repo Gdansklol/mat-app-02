@@ -164,3 +164,8 @@ Ex
 > Disadvantages > However, it is important to note that SCSS must be compiled to plain CSS for the browser to understand and apply the styles. There are tools and build tools like gulp, grunt, or webpack that can handle this compilation as part of the development process.
 
 
+- studying with clone code with tutor's description of the code.
+
+- "Don't forget to take breaks while watching the video. Try to understand the code and consolidate it without looking at the code."
+
+- reference link : ( https://www.youtube.com/watch?v=uQoI13yNPzA)
