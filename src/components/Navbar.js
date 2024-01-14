@@ -1,11 +1,12 @@
 // basic function component
 
 import {useState} from "react";
-
+import Sidebar from "./Sidebar";
 export default function Navbar() {
   const [showSidebar, setShowSidebar] = useState();
 
     return (
+      <>
        <div className="navbar container">
           <a href="#!" className="logo">F<span>oo</span>dCrown</a>
           <div className="nav-links">
@@ -19,5 +20,8 @@ export default function Navbar() {
             <div className="bar"></div>
           </div>
        </div>  
+
+       <Sidebar />
+       </>
     )
 }
